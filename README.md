@@ -1,5 +1,5 @@
 <p align="center" >
-  <img src="https://github.com/igormatyushkin014/Sensitive/blob/master/Logo/logo500_500.png" alt="SwiftyPredictor" title="SwiftyPredictor">
+  <img src="https://github.com/igormatyushkin014/SwiftyPredictor/raw/master/Images/logo_500_500.png" alt="SwiftyPredictor" title="SwiftyPredictor">
 </p>
 
 <p align="center">
