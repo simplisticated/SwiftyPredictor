@@ -28,7 +28,50 @@ or
 
 ## Usage
 
-Usage examples will be published soon.
+To initialize predictor, simply write something like this:
+
+```swift
+let predictor = Predictor(APIKey: "some_api_key")
+```
+
+As you noticed, constructor requires API key. If you still don't have it, obtain new API key [here](https://tech.yandex.ru/keys/get/?service=pdct) (you'll need to authorize with Yandex account).
+
+Now you can make requests for text suggestions:
+
+```swift
+predictor.requestSuggestions(forQuery: "how to ", inLanguage: .english, withLimit: 10) { (suggestions, error) in
+    for suggestion in suggestions {
+        print(suggestion.text)
+    }
+    
+    if error != nil {
+        print("Error: \(error!)")
+    }
+}
+```
+
+The example above will print suggestions for phrase `how to `:
+- `get`
+- `make`
+- `use`
+- `buy`
+- `do`
+
+You can change language by its identifier or predefined name:
+- `.english`
+- `.russian`
+- `.custom(identifier: "es")` - Spanish language
+- etc.
+
+If you want to receive full list of supported languages, use `availableLanguages` method:
+
+```swift
+predictor.availableLanguages { (languages, error) in
+    for language in languages {
+        print(language.identifier)
+    }
+}
+```
 
 ## License
 
