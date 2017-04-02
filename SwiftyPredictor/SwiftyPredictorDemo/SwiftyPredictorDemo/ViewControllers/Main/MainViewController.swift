@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyPredictor
 
 class MainViewController: UIViewController {
     
@@ -32,7 +33,17 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        let predictor = Predictor(APIKey: "{INSERT_YOUR_API_KEY_HERE}")
+        
+        predictor.requestSuggestions(forQuery: "запрос ", inLanguage: .russian, withMaximumNumberOfSuggestions: 10) { (suggestions, error) in
+            for suggestion in suggestions {
+                print(suggestion.text)
+            }
+            
+            if error != nil {
+                print("Error: \(error!)")
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

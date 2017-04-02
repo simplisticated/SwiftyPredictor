@@ -7,32 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		692075DE1E909E69007E2581 /* LanguageExtensionInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692075DD1E909E69007E2581 /* LanguageExtensionInitialization.swift */; };
-		692075E01E90A2E3007E2581 /* PredictorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692075DF1E90A2E3007E2581 /* PredictorRequest.swift */; };
+		6962CE001E90AD9000F1A3E9 /* SwiftyPredictor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6962CDFF1E90AD9000F1A3E9 /* SwiftyPredictor.framework */; };
+		6962CE011E90AD9000F1A3E9 /* SwiftyPredictor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6962CDFF1E90AD9000F1A3E9 /* SwiftyPredictor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		69E679801E907E2800980E8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6797F1E907E2800980E8D /* AppDelegate.swift */; };
 		69E679871E907E2800980E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E679861E907E2800980E8D /* Assets.xcassets */; };
 		69E6798A1E907E2800980E8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E679881E907E2800980E8D /* LaunchScreen.storyboard */; };
 		69E679951E907ECF00980E8D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679931E907ECF00980E8D /* MainViewController.swift */; };
 		69E679961E907ECF00980E8D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E679941E907ECF00980E8D /* MainViewController.xib */; };
-		69E679A01E9081D300980E8D /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6799F1E9081D300980E8D /* Predictor.swift */; };
-		69E679A81E90835A00980E8D /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679A61E90835A00980E8D /* Language.swift */; };
-		69E679A91E90835A00980E8D /* LanguageExtensionIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679A71E90835A00980E8D /* LanguageExtensionIdentifiers.swift */; };
-		69E679AB1E90845700980E8D /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679AA1E90845700980E8D /* Suggestion.swift */; };
-		69E679AD1E9085C200980E8D /* AvailableLanguagesRequestCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679AC1E9085C200980E8D /* AvailableLanguagesRequestCompletion.swift */; };
-		69E679AF1E90862200980E8D /* SuggestionsRequestCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679AE1E90862200980E8D /* SuggestionsRequestCompletion.swift */; };
-		69E679B31E9088FB00980E8D /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679B21E9088FB00980E8D /* HttpClient.swift */; };
-		69E679BA1E90898600980E8D /* RelativeUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679B91E90898600980E8D /* RelativeUrl.swift */; };
-		69E679BC1E9089BD00980E8D /* RelativeUrlExtensionStringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679BB1E9089BD00980E8D /* RelativeUrlExtensionStringRepresentation.swift */; };
-		69E679C01E908C8000980E8D /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679BF1E908C8000980E8D /* Definitions.swift */; };
-		69E679C21E908D5C00980E8D /* UrlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679C11E908D5C00980E8D /* UrlFactory.swift */; };
-		69E679C81E90956400980E8D /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679C71E90956400980E8D /* ApiRequest.swift */; };
-		69E679CC1E9096EF00980E8D /* RequestKeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679CB1E9096EF00980E8D /* RequestKeyStorage.swift */; };
-		69E679CF1E9098E100980E8D /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E679CE1E9098E100980E8D /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6962CE021E90AD9000F1A3E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6962CE011E90AD9000F1A3E9 /* SwiftyPredictor.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		692075DD1E909E69007E2581 /* LanguageExtensionInitialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageExtensionInitialization.swift; sourceTree = "<group>"; };
-		692075DF1E90A2E3007E2581 /* PredictorRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictorRequest.swift; sourceTree = "<group>"; };
+		6962CDFF1E90AD9000F1A3E9 /* SwiftyPredictor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyPredictor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E6797C1E907E2800980E8D /* SwiftyPredictorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyPredictorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E6797F1E907E2800980E8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69E679861E907E2800980E8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,20 +39,6 @@
 		69E6798B1E907E2800980E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69E679931E907ECF00980E8D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		69E679941E907ECF00980E8D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		69E6799F1E9081D300980E8D /* Predictor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
-		69E679A61E90835A00980E8D /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
-		69E679A71E90835A00980E8D /* LanguageExtensionIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageExtensionIdentifiers.swift; sourceTree = "<group>"; };
-		69E679AA1E90845700980E8D /* Suggestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
-		69E679AC1E9085C200980E8D /* AvailableLanguagesRequestCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableLanguagesRequestCompletion.swift; sourceTree = "<group>"; };
-		69E679AE1E90862200980E8D /* SuggestionsRequestCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionsRequestCompletion.swift; sourceTree = "<group>"; };
-		69E679B21E9088FB00980E8D /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
-		69E679B91E90898600980E8D /* RelativeUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativeUrl.swift; sourceTree = "<group>"; };
-		69E679BB1E9089BD00980E8D /* RelativeUrlExtensionStringRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativeUrlExtensionStringRepresentation.swift; sourceTree = "<group>"; };
-		69E679BF1E908C8000980E8D /* Definitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
-		69E679C11E908D5C00980E8D /* UrlFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlFactory.swift; sourceTree = "<group>"; };
-		69E679C71E90956400980E8D /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
-		69E679CB1E9096EF00980E8D /* RequestKeyStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestKeyStorage.swift; sourceTree = "<group>"; };
-		69E679CE1E9098E100980E8D /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +46,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6962CE001E90AD9000F1A3E9 /* SwiftyPredictor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6962CE031E90ADA400F1A3E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6962CDFF1E90AD9000F1A3E9 /* SwiftyPredictor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		69E679731E907E2700980E8D = {
 			isa = PBXGroup;
 			children = (
 				69E6797E1E907E2800980E8D /* SwiftyPredictorDemo */,
+				6962CE031E90ADA400F1A3E9 /* Frameworks */,
 				69E6797D1E907E2800980E8D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				69E679911E907EC400980E8D /* ViewControllers */,
-				69E679971E90814300980E8D /* Libraries */,
 				69E6797F1E907E2800980E8D /* AppDelegate.swift */,
 				69E679861E907E2800980E8D /* Assets.xcassets */,
 				69E679881E907E2800980E8D /* LaunchScreen.storyboard */,
@@ -113,166 +107,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		69E679971E90814300980E8D /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				69E679981E90815500980E8D /* SwiftyPredictor */,
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
-		69E679981E90815500980E8D /* SwiftyPredictor */ = {
-			isa = PBXGroup;
-			children = (
-				69E679BE1E908C7600980E8D /* Definitions */,
-				69E6799C1E9081A700980E8D /* Types */,
-				69E679991E9081A700980E8D /* Classes */,
-			);
-			name = SwiftyPredictor;
-			path = ../../../../SwiftyPredictor;
-			sourceTree = "<group>";
-		};
-		69E679991E9081A700980E8D /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				69E6799A1E9081A700980E8D /* Networking */,
-				69E6799B1E9081A700980E8D /* Predictor */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		69E6799A1E9081A700980E8D /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				69E679B41E90895800980E8D /* Url */,
-				69E679B01E9088FB00980E8D /* Http */,
-				69E679C31E90955300980E8D /* Api */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		69E6799B1E9081A700980E8D /* Predictor */ = {
-			isa = PBXGroup;
-			children = (
-				69E6799F1E9081D300980E8D /* Predictor.swift */,
-				69E679AC1E9085C200980E8D /* AvailableLanguagesRequestCompletion.swift */,
-				69E679AE1E90862200980E8D /* SuggestionsRequestCompletion.swift */,
-				69E679AA1E90845700980E8D /* Suggestion.swift */,
-				692075DF1E90A2E3007E2581 /* PredictorRequest.swift */,
-			);
-			path = Predictor;
-			sourceTree = "<group>";
-		};
-		69E6799C1E9081A700980E8D /* Types */ = {
-			isa = PBXGroup;
-			children = (
-				69E679A51E90835A00980E8D /* Language */,
-			);
-			path = Types;
-			sourceTree = "<group>";
-		};
-		69E679A51E90835A00980E8D /* Language */ = {
-			isa = PBXGroup;
-			children = (
-				69E679A61E90835A00980E8D /* Language.swift */,
-				69E679A71E90835A00980E8D /* LanguageExtensionIdentifiers.swift */,
-				692075DD1E909E69007E2581 /* LanguageExtensionInitialization.swift */,
-			);
-			path = Language;
-			sourceTree = "<group>";
-		};
-		69E679B01E9088FB00980E8D /* Http */ = {
-			isa = PBXGroup;
-			children = (
-				69E679B11E9088FB00980E8D /* HttpClient */,
-			);
-			path = Http;
-			sourceTree = "<group>";
-		};
-		69E679B11E9088FB00980E8D /* HttpClient */ = {
-			isa = PBXGroup;
-			children = (
-				69E679B21E9088FB00980E8D /* HttpClient.swift */,
-			);
-			path = HttpClient;
-			sourceTree = "<group>";
-		};
-		69E679B41E90895800980E8D /* Url */ = {
-			isa = PBXGroup;
-			children = (
-				69E679B81E90895800980E8D /* Storage */,
-				69E679B51E90895800980E8D /* Factory */,
-			);
-			path = Url;
-			sourceTree = "<group>";
-		};
-		69E679B51E90895800980E8D /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				69E679C11E908D5C00980E8D /* UrlFactory.swift */,
-			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		69E679B81E90895800980E8D /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-				69E679B91E90898600980E8D /* RelativeUrl.swift */,
-				69E679BB1E9089BD00980E8D /* RelativeUrlExtensionStringRepresentation.swift */,
-			);
-			path = Storage;
-			sourceTree = "<group>";
-		};
-		69E679BE1E908C7600980E8D /* Definitions */ = {
-			isa = PBXGroup;
-			children = (
-				69E679BF1E908C8000980E8D /* Definitions.swift */,
-			);
-			path = Definitions;
-			sourceTree = "<group>";
-		};
-		69E679C31E90955300980E8D /* Api */ = {
-			isa = PBXGroup;
-			children = (
-				69E679C41E90955300980E8D /* Request */,
-				69E679CD1E9098D600980E8D /* Client */,
-			);
-			path = Api;
-			sourceTree = "<group>";
-		};
-		69E679C41E90955300980E8D /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				69E679C61E90955300980E8D /* Storage */,
-				69E679C51E90955300980E8D /* Keys */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		69E679C51E90955300980E8D /* Keys */ = {
-			isa = PBXGroup;
-			children = (
-				69E679CB1E9096EF00980E8D /* RequestKeyStorage.swift */,
-			);
-			path = Keys;
-			sourceTree = "<group>";
-		};
-		69E679C61E90955300980E8D /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-				69E679C71E90956400980E8D /* ApiRequest.swift */,
-			);
-			path = Storage;
-			sourceTree = "<group>";
-		};
-		69E679CD1E9098D600980E8D /* Client */ = {
-			isa = PBXGroup;
-			children = (
-				69E679CE1E9098E100980E8D /* ApiClient.swift */,
-			);
-			path = Client;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,6 +117,7 @@
 				69E679781E907E2800980E8D /* Sources */,
 				69E679791E907E2800980E8D /* Frameworks */,
 				69E6797A1E907E2800980E8D /* Resources */,
+				6962CE021E90AD9000F1A3E9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,23 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69E679CF1E9098E100980E8D /* ApiClient.swift in Sources */,
 				69E679801E907E2800980E8D /* AppDelegate.swift in Sources */,
-				69E679C21E908D5C00980E8D /* UrlFactory.swift in Sources */,
-				69E679BC1E9089BD00980E8D /* RelativeUrlExtensionStringRepresentation.swift in Sources */,
-				69E679AD1E9085C200980E8D /* AvailableLanguagesRequestCompletion.swift in Sources */,
-				692075DE1E909E69007E2581 /* LanguageExtensionInitialization.swift in Sources */,
-				69E679A81E90835A00980E8D /* Language.swift in Sources */,
-				69E679C01E908C8000980E8D /* Definitions.swift in Sources */,
-				692075E01E90A2E3007E2581 /* PredictorRequest.swift in Sources */,
-				69E679AB1E90845700980E8D /* Suggestion.swift in Sources */,
-				69E679B31E9088FB00980E8D /* HttpClient.swift in Sources */,
-				69E679C81E90956400980E8D /* ApiRequest.swift in Sources */,
-				69E679A91E90835A00980E8D /* LanguageExtensionIdentifiers.swift in Sources */,
-				69E679AF1E90862200980E8D /* SuggestionsRequestCompletion.swift in Sources */,
-				69E679BA1E90898600980E8D /* RelativeUrl.swift in Sources */,
-				69E679CC1E9096EF00980E8D /* RequestKeyStorage.swift in Sources */,
-				69E679A01E9081D300980E8D /* Predictor.swift in Sources */,
 				69E679951E907ECF00980E8D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
