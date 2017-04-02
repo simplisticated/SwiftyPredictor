@@ -26,7 +26,7 @@ public extension Language {
             }
         }
         
-        return .custom(languageIdentifier: identifier)
+        return .custom(identifier: identifier)
     }
     
 }

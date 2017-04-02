@@ -11,5 +11,5 @@ import Foundation
 public enum Language {
     case russian
     case english
-    case custom(languageIdentifier: String)
+    case custom(identifier: String)
 }
