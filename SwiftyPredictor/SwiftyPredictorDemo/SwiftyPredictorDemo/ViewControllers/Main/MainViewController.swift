@@ -33,9 +33,15 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Update navigation bar
+        
+        navigationItem.title = "SwiftyPredictor Demo"
+        
+        // Test predictor
+        
         let predictor = Predictor(APIKey: "{INSERT_YOUR_API_KEY_HERE}")
         
-        predictor.requestSuggestions(forQuery: "запрос ", inLanguage: .russian, withMaximumNumberOfSuggestions: 10) { (suggestions, error) in
+        predictor.requestSuggestions(forQuery: "test ", inLanguage: .english, withMaximumNumberOfSuggestions: 10) { (suggestions, error) in
             for suggestion in suggestions {
                 print(suggestion.text)
             }

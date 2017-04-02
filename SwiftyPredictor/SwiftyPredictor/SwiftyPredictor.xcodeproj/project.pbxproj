@@ -92,9 +92,9 @@
 		6962CDC81E90AD7000F1A3E9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				6962CDC91E90AD7000F1A3E9 /* Classes */,
 				6962CDE61E90AD7000F1A3E9 /* Definitions */,
 				6962CDE81E90AD7000F1A3E9 /* Types */,
+				6962CDC91E90AD7000F1A3E9 /* Classes */,
 			);
 			name = Source;
 			path = ../../../Source;
@@ -112,9 +112,9 @@
 		6962CDCA1E90AD7000F1A3E9 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				6962CDCB1E90AD7000F1A3E9 /* Api */,
-				6962CDD31E90AD7000F1A3E9 /* Http */,
 				6962CDD91E90AD7000F1A3E9 /* Url */,
+				6962CDD31E90AD7000F1A3E9 /* Http */,
+				6962CDCB1E90AD7000F1A3E9 /* Api */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -122,8 +122,8 @@
 		6962CDCB1E90AD7000F1A3E9 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				6962CDCC1E90AD7000F1A3E9 /* Client */,
 				6962CDCE1E90AD7000F1A3E9 /* Request */,
+				6962CDCC1E90AD7000F1A3E9 /* Client */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -172,8 +172,8 @@
 		6962CDD41E90AD7000F1A3E9 /* HttpClient */ = {
 			isa = PBXGroup;
 			children = (
-				6962CDD51E90AD7000F1A3E9 /* Predictor */,
 				6962CDD71E90AD7000F1A3E9 /* Simple */,
+				6962CDD51E90AD7000F1A3E9 /* Predictor */,
 			);
 			path = HttpClient;
 			sourceTree = "<group>";
@@ -223,12 +223,12 @@
 		6962CDDF1E90AD7000F1A3E9 /* Predictor */ = {
 			isa = PBXGroup;
 			children = (
-				6962CDE01E90AD7000F1A3E9 /* AvailableLanguagesRequestCompletion.swift */,
 				6962CDE11E90AD7000F1A3E9 /* Predictor.swift */,
-				6962CDE21E90AD7000F1A3E9 /* PredictorError.swift */,
-				6962CDE31E90AD7000F1A3E9 /* PredictorRequest.swift */,
-				6962CDE41E90AD7000F1A3E9 /* Suggestion.swift */,
+				6962CDE01E90AD7000F1A3E9 /* AvailableLanguagesRequestCompletion.swift */,
 				6962CDE51E90AD7000F1A3E9 /* SuggestionsRequestCompletion.swift */,
+				6962CDE41E90AD7000F1A3E9 /* Suggestion.swift */,
+				6962CDE31E90AD7000F1A3E9 /* PredictorRequest.swift */,
+				6962CDE21E90AD7000F1A3E9 /* PredictorError.swift */,
 			);
 			path = Predictor;
 			sourceTree = "<group>";
