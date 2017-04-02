@@ -54,6 +54,16 @@ public class Predictor {
     
     // MARK: Public object methods
     
+    /**
+    Makes asynchronous request for list of supported languages.
+    Requested data is returned within `completion` closure.
+    
+    - Parameters:
+        - completion: Closure that is called when request is finished.
+    
+    - returns:
+        Cancellable request instance.
+    */
     @discardableResult
     public func availableLanguages(withCompletion completion: @escaping AvailableLanguagesRequestCompletion) -> PredictorRequest {
         // Start HTTP request
@@ -71,11 +81,24 @@ public class Predictor {
         return predictorRequest
     }
     
+    /**
+    Makes asynchronous request for list of suggestions.
+    Requested data is returned within `completion` closure.
+    
+    - Parameters:
+        - query: Text that should be continued with suggestions.
+        - language: Language of suggestions.
+        - limit: Maximum number of suggestions.
+        - completion: Closure that is called when request is finished.
+    
+    - returns:
+        Cancellable request instance.
+    */
     @discardableResult
-    public func requestSuggestions(forQuery query: String, inLanguage language: Language, withMaximumNumberOfSuggestions maximumNumberOfSuggestions: Int, andCompletion completion: @escaping SuggestionsRequestCompletion) -> PredictorRequest {
+    public func requestSuggestions(forQuery query: String, inLanguage language: Language, withLimit limit: Int, andCompletion completion: @escaping SuggestionsRequestCompletion) -> PredictorRequest {
         // Start HTTP request
         
-        let task = apiClient.send(request: .getSuggestions(language: language, query: query, limit: maximumNumberOfSuggestions, completion: { (suggestions, error) in
+        let task = apiClient.send(request: .getSuggestions(language: language, query: query, limit: limit, completion: { (suggestions, error) in
             completion(suggestions, error)
         }))
         
