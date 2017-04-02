@@ -73,6 +73,24 @@ predictor.availableLanguages { (languages, error) in
 }
 ```
 
+All asynchronous requests made by `Predictor` instance are cancellable so you can stop them when it's needed:
+
+```swift
+/*
+ * Obtain reference to request instance.
+ */
+
+let request = predictor.requestSuggestions(forQuery: "how to ", inLanguage: .english, withLimit: 10) { (suggestions, error) in
+    // Do something with suggestions here...
+}
+
+/*
+ * Cancel request when needed.
+ */
+
+request.cancel()
+```
+
 ## License
 
 `SwiftyPredictor` is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
