@@ -39,7 +39,7 @@ class MainViewController: UIViewController {
         
         // Test predictor
         
-        let predictor = Predictor(APIKey: "{INSERT_YOUR_API_KEY_HERE}")
+        let predictor = Predictor(APIKey: PredictorDefinitions.APIKey)
         
         predictor.requestSuggestions(forQuery: "test ", inLanguage: .english, withMaximumNumberOfSuggestions: 10) { (suggestions, error) in
             for suggestion in suggestions {

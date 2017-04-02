@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6962CE001E90AD9000F1A3E9 /* SwiftyPredictor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6962CDFF1E90AD9000F1A3E9 /* SwiftyPredictor.framework */; };
 		6962CE011E90AD9000F1A3E9 /* SwiftyPredictor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6962CDFF1E90AD9000F1A3E9 /* SwiftyPredictor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6962CE061E90C40600F1A3E9 /* PredictorDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6962CE051E90C40600F1A3E9 /* PredictorDefinitions.swift */; };
 		69E679801E907E2800980E8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6797F1E907E2800980E8D /* AppDelegate.swift */; };
 		69E679871E907E2800980E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E679861E907E2800980E8D /* Assets.xcassets */; };
 		69E6798A1E907E2800980E8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E679881E907E2800980E8D /* LaunchScreen.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		6962CDFF1E90AD9000F1A3E9 /* SwiftyPredictor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyPredictor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6962CE051E90C40600F1A3E9 /* PredictorDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictorDefinitions.swift; sourceTree = "<group>"; };
 		69E6797C1E907E2800980E8D /* SwiftyPredictorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyPredictorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E6797F1E907E2800980E8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69E679861E907E2800980E8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6962CE041E90C3E900F1A3E9 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				6962CE051E90C40600F1A3E9 /* PredictorDefinitions.swift */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
 		69E679731E907E2700980E8D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		69E6797E1E907E2800980E8D /* SwiftyPredictorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6962CE041E90C3E900F1A3E9 /* Definitions */,
 				69E679911E907EC400980E8D /* ViewControllers */,
 				69E6797F1E907E2800980E8D /* AppDelegate.swift */,
 				69E679861E907E2800980E8D /* Assets.xcassets */,
@@ -182,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E679801E907E2800980E8D /* AppDelegate.swift in Sources */,
+				6962CE061E90C40600F1A3E9 /* PredictorDefinitions.swift in Sources */,
 				69E679951E907ECF00980E8D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
