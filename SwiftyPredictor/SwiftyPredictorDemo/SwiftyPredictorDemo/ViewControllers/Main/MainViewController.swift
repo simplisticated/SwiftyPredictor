@@ -41,19 +41,13 @@ class MainViewController: UIViewController {
         
         let predictor = Predictor(APIKey: PredictorDefinitions.APIKey)
         
-        predictor.requestSuggestions(forQuery: "test ", inLanguage: .english, withLimit: 10) { (suggestions, error) in
-            for suggestion in suggestions {
+        predictor.requestSuggestions(forQuery: "how to ", inLanguage: .english, withLimit: 10) { (suggestions, error) in
+            suggestions.forEach({ (suggestion) in
                 print(suggestion.text)
-            }
+            })
             
             if error != nil {
                 print("Error: \(error!)")
-            }
-        }
-        
-        predictor.availableLanguages { (languages, error) in
-            for language in languages {
-                print(language.identifier)
             }
         }
     }
