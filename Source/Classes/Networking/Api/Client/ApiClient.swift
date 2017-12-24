@@ -60,6 +60,10 @@ internal class ApiClient {
     
     @discardableResult
     public func send(request: ApiRequest) -> URLSessionDataTask {
+        // Encode API key
+        
+        let encodedApiKey = apiKey.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? String(format: "%@", apiKey)
+        
         // Obtain URL factory
         
         let urlFactory = UrlFactory()
@@ -72,7 +76,7 @@ internal class ApiClient {
         case let .getAvailableLanguages(completion):
             // Obtain absolute URL string
             
-            let relativeUrl: RelativeUrl = .languages(apiKey: apiKey)
+            let relativeUrl: RelativeUrl = .languages(apiKey: encodedApiKey)
             let relativeUrlString = relativeUrl.stringValue
             let absoluteUrlString = urlFactory.absoluteUrl(fromRelativePath: relativeUrlString)
             
@@ -106,7 +110,7 @@ internal class ApiClient {
             
             // Obtain absolute URL string
             
-            let relativeUrl: RelativeUrl = .complete(apiKey: apiKey, languageIdentifier: language.identifier, query: encodedQuery, limit: limit)
+            let relativeUrl: RelativeUrl = .complete(apiKey: encodedApiKey, languageIdentifier: language.identifier, query: encodedQuery, limit: limit)
             let relativeUrlString = relativeUrl.stringValue
             let absoluteUrlString = urlFactory.absoluteUrl(fromRelativePath: relativeUrlString)
             
